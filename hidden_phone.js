@@ -23,10 +23,6 @@ function HidePhone(s) {
 	var rm = s.replace(/([\/\,\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&])/g," ");
 	return replacePhone(rm.split(" "), s);
 }
-String.prototype.indexOfEnd = function(string) {
-    var io = this.indexOf(string);
-    return io == -1 ? -1 : io + string.length;
-}
 
 function getPhoneVnValid(s) {
 	var check;
